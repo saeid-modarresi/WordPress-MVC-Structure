@@ -26,4 +26,9 @@ if (file_exists($autoloadPath)) {
 
     require_once $autoloadPath;
 
+    if (class_exists(wordpress\mvc_structure\App::class)) {
+
+        $app = \wordpress\mvc_structure\App::getInstance();
+        $app->init();
+    }
 }
