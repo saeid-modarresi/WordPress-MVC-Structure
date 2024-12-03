@@ -2,8 +2,11 @@
 
 namespace wordpress\mvc_structure\Src;
 
+use wordpress\mvc_structure\Src\Hooks\General;
+
 abstract class BaseApp
 {
+    use General;
 
     public $app;
 
@@ -36,5 +39,11 @@ abstract class BaseApp
         $appNamespace = substr(get_called_class(), 0, strrpos(get_called_class(), "\\"));
         $this->namespace = strtolower(str_replace("\\","/", $appNamespace));
 
+        /*
+        |--------------------------------------------------------------------------
+        | Init the requires
+        |--------------------------------------------------------------------------
+        */
+        $this->initRquiredMethods();
     }
 }
