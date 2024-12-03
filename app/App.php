@@ -2,6 +2,7 @@
 
 namespace wordpress\mvc_structure;
 
+use wordpress\mvc_structure\Frontend\Controllers\PostsController;
 use wordpress\mvc_structure\Src\BaseApp;
 
 class App extends BaseApp
@@ -59,6 +60,13 @@ class App extends BaseApp
      */
     public function registerRoutes()
     {
+
+        /*
+        |--------------------------------------------------------------------------
+        | Routes for wp admin dashboard
+        |--------------------------------------------------------------------------
+        */
+        $this->createRoute("GET", "v1", "/frontend/posts", PostsController::class, "list", "wordpress_mvc_structure_posts_get", false);
 
     }
 
