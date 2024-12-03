@@ -3,10 +3,11 @@
 namespace wordpress\mvc_structure\Src;
 
 use wordpress\mvc_structure\Src\Hooks\General;
+use wordpress\mvc_structure\Src\Traits\Routes;
 
 abstract class BaseApp
 {
-    use General;
+    use Routes, General;
 
     public $app;
 
@@ -44,6 +45,7 @@ abstract class BaseApp
         | Init the requires
         |--------------------------------------------------------------------------
         */
+        $this->registerRoutes();
         $this->initRquiredMethods();
     }
 }
