@@ -2,7 +2,9 @@
 
 namespace wordpress\mvc_structure;
 
-class App
+use wordpress\mvc_structure\Src\BaseApp;
+
+class App extends BaseApp
 {
 
     private static $instance = null;
