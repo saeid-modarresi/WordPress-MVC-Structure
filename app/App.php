@@ -34,8 +34,8 @@ class App extends BaseApp
         add_action('admin_menu', function (){
 
             add_menu_page(
-                __('Wordpress MVC', WIZBAN_TRANSLATE_KEY),
-                __('Wordpress MVC', WIZBAN_TRANSLATE_KEY),
+                __('Wordpress MVC', WPMVCST_TRANSLATE_KEY),
+                __('Wordpress MVC', WPMVCST_TRANSLATE_KEY),
                 'manage_options',
                 'Wordpress-mvc-structure',
                 function (){

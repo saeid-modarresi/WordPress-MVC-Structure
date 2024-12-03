@@ -28,8 +28,8 @@ trait General
     {
         add_action('init', function(){
             // for example:
-            register_nav_menu('main-menu', __('Main menu', WIZBAN_TRANSLATE_KEY));
-            register_nav_menu('mobile-menu', __('Mobile menu', WIZBAN_TRANSLATE_KEY));
+            register_nav_menu('main-menu', __('Main menu', WPMVCST_TRANSLATE_KEY));
+            register_nav_menu('mobile-menu', __('Mobile menu', WPMVCST_TRANSLATE_KEY));
         });
     }
 
