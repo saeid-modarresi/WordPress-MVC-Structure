@@ -1,0 +1,17 @@
+{
+  "name": "wordpress-mvc-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-newer": "^1.3.0"
+  },
+  "author": "Saeid.Modarresi",
+  "license": "MIT"
+}
