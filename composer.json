@@ -2,7 +2,7 @@
     "name": "wordpress/mvc_structure",
     "autoload": {
         "psr-4": {
-            "wordpress\\mvc_structure": "app/"
+            "wordpress\\mvc_structure\\": "app/"
         }
     },
     "authors": [
