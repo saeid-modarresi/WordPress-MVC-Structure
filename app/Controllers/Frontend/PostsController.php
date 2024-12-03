@@ -25,7 +25,9 @@ class PostsController extends BaseController
 
         }else{
 
-            $posts = Post::query()->where("ID", $postID)->first()->toArray();
+            //Using ORM to fetch a post by ID
+            $posts = Post::query()->where("ID", $postID)->first();
+            $posts = !empty($posts) ? $posts->toArray() : [];
         }
      
         // Return the response
