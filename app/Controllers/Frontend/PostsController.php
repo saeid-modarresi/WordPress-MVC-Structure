@@ -1,8 +1,8 @@
 <?php
 
-namespace wordpress\mvc_structure\Frontend\Controllers;
+namespace wordpress\mvc_structure\Controllers\Frontend;
 
-use Wizban\Theme\Models\Post;
+use wordpress\mvc_structure\Models\Post;
 use wordpress\mvc_structure\Src\Abstracts\BaseController;
 
 class PostsController extends BaseController
@@ -17,7 +17,6 @@ class PostsController extends BaseController
         $args = [
             'post_type'      => Post::$postType,
             'posts_per_page' => -1,
-            'fields'         => 'ids',
         ];
 
         if(empty($postID)){
@@ -26,9 +25,9 @@ class PostsController extends BaseController
 
         }else{
 
-            $posts = Post::query()->where("ID", $postID)->first();
+            $posts = Post::query()->where("ID", $postID)->first()->toArray();
         }
-
+     
         // Return the response
         return $this->getResponse(true, 200, $posts);
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace wordpress\mvc_structure\Traits;
+namespace wordpress\mvc_structure\Src\Traits;
 
 use WP_REST_Response;
 

@@ -2,7 +2,7 @@
 
 namespace wordpress\mvc_structure;
 
-use wordpress\mvc_structure\Frontend\Controllers\PostsController;
+use wordpress\mvc_structure\Controllers\Frontend\PostsController;
 use wordpress\mvc_structure\Src\BaseApp;
 
 class App extends BaseApp

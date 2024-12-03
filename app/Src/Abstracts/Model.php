@@ -1,6 +1,6 @@
 <?php
 
-namespace Wizban\Theme\Src\Abstracts;
+namespace wordpress\mvc_structure\Src\Abstracts;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Eloquent\Model as BaseModel;
